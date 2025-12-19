@@ -1,5 +1,14 @@
 {% extends "base.html" %}
-{% block title %} Choisir en numero {% endblock %}
-{% block content %} 
-<button type="button" class="btn btn-danger"> </button>
+{% block title %} Tirage {% endblock %}
+
+{% block content %}
+<div class="page-center">
+    <h2>Groupe sélectionné : {{ groupchoice|capitalize }}</h2>
+    <p>Appuyez sur le bouton pour lancer le tirage.</p>
+
+    <a href="{{ url_for('draw', groupchoice=groupchoice) }}" 
+       class="btn btn-danger btn-lg draw-btn">
+       Tire en numero
+    </a>
+</div>
 {% endblock %}

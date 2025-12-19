@@ -1,0 +1,59 @@
+/* ===========================
+   GENERAL PAGE LAYOUT
+   =========================== */
+
+body {
+    background-color: #f8f9fa;  /* light neutral background */
+    margin: 0;
+    padding: 20px;
+    font-family: "Poppins", sans-serif;
+    color: #222;
+}
+
+/* Center all draw-related content */
+.page-center {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* ===========================
+   HEADINGS
+   =========================== */
+
+h1, h2, h3 {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* ===========================
+   DRAW BUTTON
+   =========================== */
+
+.draw-btn {
+    display: inline-block;
+    padding: 15px 35px;
+    font-size: 1.6rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.15s ease, background-color 0.2s ease;
+}
+
+/* Hover effect */
+.draw-btn:hover {
+    transform: scale(1.05);
+}
+
+/* ===========================
+   NUMBER DISPLAY PAGE
+   =========================== */
+
+.drawn-number {
+    font-size: 5rem;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+/* Add spacing for top sections */
+.section {
+    margin-bottom: 30px;
+}
